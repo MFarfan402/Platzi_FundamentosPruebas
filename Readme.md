@@ -1,5 +1,5 @@
-
-** Proceso de pruebas del software y los estándares internacionales.
+--------------------------------------------------------
+## Proceso de pruebas del software y los estándares internacionales.
 
 ¿Que pruebas debemos hacer? 
 ¿Cuál debe ser nuestra perspectiva como testers?
@@ -25,7 +25,7 @@ Estándares de testing:
 - IEEE
 - TPI
 
-** Proceso de pruebas del software: Calidad y Defectos
+## Proceso de pruebas del software: Calidad y Defectos
 
 ¿Que es la calidad? Es una percepción entre lo deseado y analizado.
 La calidad forma parte del proceso. Si no se entiende lo que es la calidad para el cliente, no se tendrá la calidad deseada. 
@@ -39,8 +39,7 @@ Defecto - No desempeña funciones.
 Fallo - Incapacidad dentro de márgenes.
 Error - Acción humana incorrecta.
 
-
-** Principios del testing moderno.
+## Principios del testing moderno.
 
 Evolución natural del testing ágil. Necesidad de evolucionar la perspectiva del desarrollador y el tester, trabajar como un equipo. El tester debería enfocarse en la calidad de software y el desarrollador debería crear el software. Todo trabajando en conjunto.
 
@@ -76,7 +75,7 @@ Evolución natural del testing ágil. Necesidad de evolucionar la perspectiva de
 
 --------------------------------------------------------
 
-Presupuesto, Recursos, Tiempo y Actividades Clave
+## Presupuesto, Recursos, Tiempo y Actividades Clave
 
 Los elementos que tomamos en cuenta para crear un proyecto de software son el presupuesto, el recurso y el tiempo. 
 Una mala planeación del proyecto puede hacer que los costos se incrementen.
@@ -99,3 +98,47 @@ Implica módulos, funciones, BD, arquitectura general de la base de datos. No se
 * Pruebas:
 Pruebas en dispositivos, pruebas de conexión. Sirven para confirmar lo funcional dentro de los requerimientos.
 Pruebas de aceptación, donde esta el usuario final.
+
+## Estrategia de pruebas
+
+Son aquellas que nos permiten conocer por donde comenzar, planearlas, identificarlas. 
+
+¿Que problema tenemos actualmente? ¿Qué problema debemos evitar? 
+
+Caracterísiticas:
+- La prueba comienza desde los niveles más básicos modulares.
+- Distintas técnicas de pruebas.
+
+Objetivos: 
+- Planificar las pruebas necesarias en cada iteración. Incluyendo las pruebas de unidad, integración y pruebas de sistema.
+- Diseñar e implementar pruebas creando casos de prueba.
+- Realizar diferentes pruebas.
+
+## Testing del desarrollo de software
+
+Diferencias entre testing y checking.
+Testing: Exploración que genera nuevos resultados.
+Nunca termina, siempre hay nuevos escenarios. 
+
+Checking: Ya sabemos que sucede algo y esperamos que suceda ese algo. Asegurarnos que siempre sucedan.
+Estrategias del checking: Ejecutar checking solo si sucede algo más. Se ejecutan cada vez que... Se ejecuten de manera programada.
+
+(Ejemplo de una maleta, cosas que se meten por primera vez, checklist.)
+
+Errores comunes:
+- Pruebas duplicadas: Invertir tiempo en algo que ya se llevo a cabo.
+- Pruebas similares: Pruebas con el mismo flujo. Orientado a pruebas automatizadas.
+- Pruebas sin valor agregado: Pruebas que no esta asociado al negocio.
+- Pruebas caducadas. La naturaleza del software es incremental, por lo que se pueden volver obsoletas.
+
+Checking mal empleado:
+- Pobre cobertura de pruebas.
+- Falta de actualización.
+- Mal manejo de versiones
+
+Ventajas de correr checking:
+- Correr pruebas en paralelo o en múltiples plataformas
+- Reducimos el error humano
+- Probamos grandes cantidades de datos
+
+Continous Delivery/Continous Integration
