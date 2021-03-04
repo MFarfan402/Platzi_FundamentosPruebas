@@ -142,3 +142,105 @@ Ventajas de correr checking:
 - Probamos grandes cantidades de datos
 
 Continous Delivery/Continous Integration
+
+## Testing ágil
+
+En pequeñas iteraciones logremos reducir el riesgo que se pueda correr en la entrega.
+El testing ágil involucra a todos los miembros de un equipo, todos en el equipo son testers, pero el tester trata de tener la mayor cobertura de pruebas.
+
+Estrategias ágiles (Forma de llevar el proceso de pruebas, documentación y entrega efectiva):
+- Testing de todo el equipo.
+- Testing independiente.
+- Integración Continua (DEVOPS)
+- TDD 
+- BDD
+- ATDD
+
+Las pruebas dependen de todo el equipo. 
+
+Ejemplos de niveles de prueba: componente, integración
+
+## Niveles de pruebas.
+
+Pruebas de niveles por capas. Nos sirve para separar las pruebas y tener una mayor cobertura permitiendonos mayor descripción y comprensión de todos los elementos.
+
+- Pruebas de componentes.
+
+Cosas pequeñas que podamos observar. No tienen que ver con todo un flujo completo. 
+
+- Pruebas de integración.
+
+Un sistema tiene una serie de componentes que trabajan juntos y se forma el sistema. Pero cuando se tienen varios sistemas, necesitamos la integración entre estos mismos. 
+
+Las pruebas de integración miden la comunicación entre todos los componentes.
+
+- Pruebas de sistema.
+
+Incluyen el contexto. 
+
+- Pruebas de aceptación.
+
+Ya se ejecutaron las pruebas funcionales. Estas son cuando ya vamos a entregar a nuesstro cliente. Ultima verificación junto con las pruebas de cliente.
+
+## Tipos de pruebas.
+
+En los niveles sabemos la profundidad de las pruebas. Pero en los tipos conoceremos las técnicas que se van a emplear para probar cierto sistema.
+
+Tipo de actividad específica que vamos a tomar de acuerdo con nuestros objetivos. 
+
+- Pruebas funcionales.
+¿Como funciona un sistema? ¿Como interactua un usuario con el?
+¿Que es lo que hace el sistema?
+
+- Pruebas no funcionales.
+Aun cuando el sistema funciona, no es accesible, que tenga la capacidad para interactuar con la aplicación.
+
+- Pruebas estructurales.
+Pruebas sobre la base de datos, que el servidor se encuentre bien configurado. (Pruebas de caja blanca).
+
+- Pruebas de manejo de cambios.
+Pruebas de regresión y es necesario revisar que el sistema este acorde al sistema.
+
+## Pruebas estáticas y dinámicas
+
+Pruebas estáticas se basan en la examinación manual de los elementos que conforman la construcción del software.
+
+Prubas dinámicas se enfocan principalmente en comportamientos externos visibles durante la ejecución del software.
+
+Elementos de pruebas estáticas:
+- Contratos, planes y calendario del proyecto, así como su presupuesto.
+- El análisis de requerimientos.
+- Especificaciones o reglas de negocio. 
+- Definición de HU, criterios de aceptación, mockups, arquitectura
+- Las pruebas (puntos de verificación CI)
+- Guías de usuario
+- Evaluación/revisión del código.
+
+El desarrollador cree todo lo que se le dice en un requerimiento. Pero el tester debe trabajar de forma conjunta con el product owner para revisar lo que pide el cliente, lo que se puede construir y lo que se está construyendo.
+
+Beneficios:
+- Detectar y corregir defectos de manera más eficiente.
+- Identificar y priorizar la ejecución de pruebas en etapas posteriores
+- Prevenir defectos:
+    - Que no son detectables durante las pruebas dinámicas.
+    - Duratne la etapa de análisis y diseño.
+- Reducimos inconsistencias, ambigüedades, contradicciones y definiciones incorrectas.
+- Reducimos costos y tiempos
+- Reducimos retrabajos
+- Mejoramos la comunicación entre todos los miembros del equipo.
+
+"La obviedad es la causa principal de la introducción de defectos."
+
+## Definición y diseño de pruebas.
+
+¿Que hace un tester?
+1. Encontrar problemas.
+2. Documentar problemas.
+3. Comunicar problemas.
+
+"Si no encuentra problemas antes de que el producto sea entregado al cliente, entonces su testing es ineficiente"
+"Si cuando encuentras problemas no sabe documentar y reproducir los pasos correctos su testing genera retrabajo"
+"Si como QA no sabe  argmentar y proteger los intereses del negocio o de los clientes, su testingo no agrega valor"
+
+¿Que debe contener el caso de prueba?
+Nombre, desscripción, pasos, resultados esperados, resultados actuales
