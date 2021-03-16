@@ -244,3 +244,120 @@ Beneficios:
 
 ¿Que debe contener el caso de prueba?
 Nombre, desscripción, pasos, resultados esperados, resultados actuales
+
+# Gestión, monitoreo y control
+
+##  Caja Blanca, Gris y Negra
+
+Cuando nos referimos a una caja es la manera de observar el contenido del software.
+Caja negra: No vemos como fue construido el código. Solo vemos la interfaz.
+Caja blanca: Podemos ver lo que hay adentro del código.
+Caja gris: Integraciones, como fluyen los datos a través de las redes.
+
+
+Tecnicas de pruebas:
+* Caja negra.
+- Partición de equivalencia. Agrupamiento de los casos de acuerdo a ciertos grupos.
+- Valores límite. Uso de valores frontera, máximos y mínimos.
+- Tablas de decisiones. Matrices de resultados, variables de entrada y variables de salida.
+- Transición de estado. Como se comporta el componente dadas ciertas condiciones de entrada. 
+- Casos de uso. Probar flujos completos.
+
+* Caja blanca.
+- Cobertura de declaraciones. (Cobertura de sentencias)
+Dependiendo del tipo de software, implica que cada línea de código debería de ser ejecutada alguna vez. Y para una puesta en producción debería de tener un índice de cobertura antes de una liberación.
+Práctica las sentencias ejecutables en el código. Se mide entre el número de sentencias ejecutadas, entre el número de sentencias ejecutables.
+- Cobertura de código.
+Se prueban los flujos basados en los resultados de cada decisión. La cobertura se mide entre el número total de resultados de decisión ejecutados, entre el número de casos de uso.
+
+* Caja gris.
+- Casos de negocio.
+Es necesario concocer como interactua el usuario con el sistema. Para eso hay un flujo con datos de entrada, procesamiento y datos de salida. Tiene relación con el business model.
+- Pruebas E2E.
+Como se esta reflejando la interfaz de acuerdo a cierto contexto dado.
+- Pruebas de integración.
+Como se transportan los datos. Las integraciones son las respuestas de como fluyen los datos a tavés de distintos servicios.
+
+## Gestión de monitoreo y control: Monitoreo y Seguimiento.
+
+El 30% de las empresas no logran gestionar y monitorear las pruebas.
+
+Etapas de gestión de pruebas:
+Planeación, Monitoreo, análisis, diseño, implementación, ejecución y finalización.
+
+Planeación: Definir los objetivos de las pruebas. Alcancce, estimación y recursos.
+Monitoreo y control: Metricas que nos revelen si llevamos avances. Forma en la que nos alertará si el plan no se está llevando a cabo.
+Análisis: Decidir cuales son las prioridades. 
+Diseño: diseño de casos de uso. Después priorizar las pruebas, identificar el entorno de pruebas, trazabilidad entre pruebas y condiciones. 
+Implementación: Infraestructura suficiente para ejecutar las pruebas. Equipo y material para su seguimiento, datos de entrada, arquitectura y software de seguimiento.
+Ejecución: ejecutar las suites de pruebas de acuerdo con el plan que se ha realizado. 
+Finalización: Que porcentaje se ejecutaron, aprender lecciones sobre el proceso, comunicar los defectos.
+
+## Roles y responsabilidades
+
+Aunque seamos especialista en software. Cuando se dividen las responsabilidade para el area de pruebas manuales se observan 4 roles principales:
+Escpecialista en pruebas manuales: Pensamiento lateral, organización diseño y documentación.
+Especialista en pruebas tecnicas: Conocimientos técnicos. Estar siempre actualizada en las herramientas que le permitan acelerar el trabajo. Autodidacta, continuo entrenamiento.
+Lider del equipo de pruebas: gestión a todo el equipo, dar seguimiento a los defectos.
+Ingeniero de calidad: La cultura, el proceso, alinear las pruebas de acuerdo el negocio.
+
+La responsabilidad de todos ellos es que se aseguren de la calidad del producto que se está entregando.
+
+## Roles y Responsabilidades en acción
+
+Independientemente del rol, un tester participa de todas las etapas del proceso de desarrollo de software.
+El perfil del tester conjuga habilidades con el conocimiento del negocio, de la aplicación y del diseño, ejecución y administración de las pruebas.
+
+Tester manual: Estrategia, definición, ejecución y cobertura de pruebas para cumplir los requerimientos.
+Tester técnico: Acelera la capacidad de ejecución de las pruebas. Implementa herramientas que permitan la automatización de pruebas. o la correctaa selección de datos de pruebas o el monitoreo de la ejecución de las pruebas.
+El líder de pruebas: Se vuelve un facilitador de servicios, información y herramientas para el equipo de pruebas.
+El ingeniero de calidad: Ayuda al negocio en general. Ayuda a testers como cualquier otro miembro del equipo a llevar a cabo pruebas que reduzcan el error humano.
+
+
+# Gestión de bugs
+
+## Ejercicios
+
+1. "Es el encargado de hacer coaching de calidad en toda la empresa"
+Respuesta: Ingeniero de calidad.
+
+2. "Es el reponsable de emplear herramientas que automaticen o aceleren las ejecuciones de las pruebas"
+Respuesta: Tester técnico.
+
+3. "Es el responsable de asegurarse de la cobertura de pruebas y nuevos escenarios"
+Respuesta: Tester manual.
+
+4. "Es el facilitador del equipo que se asegura de implementar lo necesario para que se ejecuten las pruebas".
+Respuesta: Líder de pruebas.
+
+## Retrabajo
+
+Las empresas deciden tener un monitoreo a través de herramientas no solo visuales, pero que todos puedan tener de manera clara que es lo que ya se hizo, que es lo que se está haciendo y que es lo que se va a hacer después.
+
+Para esto sirven las acciones de control:
+- Si identificamos un riesgo.
+
+    El monitoreo nos sirve para saber si estamos encontrando un riesgo para el negocio. Cuando algo se esta saliendo de control, cuando no vayamos a acabar a tiempo o si tenemos algún bloqueador.
+
+- Si identificamos falta de ambientes.
+
+    Es común que el ambiente de pruebas no siempre este configurado o que requiera ser actualizado. Para poder tener una idea de que los ambientes estén listos deben formar parte de nuestras métricas de monitoreo y avances de trabajo.
+
+- Si el DoD no se cumple.
+
+    Se realizaron las pruebas, se aceptaron los cambios, pero puede que no se ajuste el criterio a lo nuevo que se haya cambiado
+
+
+Los resultados de las pruebas:
+¿Cuántas pruebas se han ejecutado? ¿Cuantas ellas encontraron un defecto o un blocker?
+Desempeño del equipo de testing:
+No asiste alguien, no hubo internet, el cliente no entrego. Muchas circunstancias forman parte del desempeño.
+
+¿Cuándo sucede el retrabajo?
+"Principal causa de de costos elevados y que la planeación no funcione."
+Las acciones, las actividades y los hábitos de como gestionar los hábitos son el retrabajo.
+
+- Falta o mala documentación.
+- Falta de capacitación o dominio en las herramientas utilizadas.
+- Falta de capacitación o dominio en el software a utilizar.
+- Falta de comunicación
