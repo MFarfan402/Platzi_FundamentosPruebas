@@ -361,3 +361,48 @@ Las acciones, las actividades y los hábitos de como gestionar los hábitos son 
 - Falta de capacitación o dominio en las herramientas utilizadas.
 - Falta de capacitación o dominio en el software a utilizar.
 - Falta de comunicación
+
+## Sistema de seguimiento de bugs
+
+Las malas prácticas entorpecen la gestión del proyecto. Razones por la que aparecen defectos:
+- Presión de tiempo en la entrega.
+- DEscuidos en el diseño.
+- Inexperiencia o falta de conocimiento.
+- Falta de comunicación.
+- Diseño de código complejo.
+- Desconocimiento de las tecnologías.
+
+¿Como gestionar los bugs?
+- ¿Que debe hacer quien encuentre el bug? 
+- ¿En que herramienta debe documentar el defecto?
+- ¿Como se resolvera? ¿Cuando se resolverá?
+- ¿Criterios de acepación?
+
+Reportado-> Revisado-> Abierto-> Aprobado para reparación->Arreglado->Confirmación Exitosa-> Cerrado
+
+Reportado-> Mal reporte-> Reescrito
+
+Abierto-> No es un problema-> Rechazado
+Abierto->Declinado para reparación-> Diferido-> Nueva información obtenida-> Reabierto
+
+Arreglado-> Falla prueba de confirmación-> Reabierto
+Cerrado-> "El problema regreso" -> Reabierto
+
+Repositorio y monitoreo de defectos.
+Una vez instaurado el proceso de gestión de bugs, también se debe precisar quién tiene acceso a los bugs y cuales son los permisos que tienen.
+
+## Defectos y sugerencias
+DEfecto: Aquello que no cumple los requerimientos funcionales, de diseño y de arquitectura, consecuencia de un error humano.
+Sugerencia: Como la experiencia de usuario se ve afectada. Colores, tamaños, lenguajes.
+
+"Si la calidad la define el usuario final... sus sugerencias se vuelven defectos"
+
+Sugerencias convertidas en defectos: Actualizaciones de software:
+- Lenta la operación
+- Detiene parcialmente el proceso
+- El contenido confunde al usuario
+- Permiter que el usuario cometa errores
+- Mala traducción
+- No funciona sin internet
+
+Cerrar el defecto sería realizar los mismos pasos que se hicieron y el resultado debería ser el resultado esperado.
